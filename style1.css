@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #ffff;
+    margin:0;
+    padding: 0;
+}
+.header-content{
+    display:flex;
+    align-content: center;
+    height: 15%;
+    width: 100%;
+}
+.logo-img a img{
+    height:75%;
+    padding: 10px;
+}
+nav {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    margin: auto;
+    color: #244b77;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    font-size: 3vh;
+    margin-right: 10vw;
+}
+
+.container{
+    height: 70%;
+    width: 100%;
+    background-color:#244b77 ;
+}
+.left-panel{
+    height: 100%;
+    width:40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile{
+    padding:10px;
+    height: 75vh;
+    width: 50vh;
+    border-radius: 5px;
+    max-width: 90%;
+    max-height:90% ;
+    background-color:white
+}
+.img-profile{
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img-profile img{
+    height: 90%;
+    max-width: 100%;
+    max-height: 100%;
+    border-radius:100%;
+}
+.profile .user-info{
+    height: 50%;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+}
+.user-info .heading{
+    height:20%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.heading h1{
+    max-width: 100%;
+    font-size:25px;
+    border-bottom: 5px solid #244b77;
+}
+.details{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.details h2{
+    font-size:20px;
+    padding: 5px;
+}
