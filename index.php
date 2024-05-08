@@ -21,7 +21,7 @@ QR Code Attendance System Login
 </div>
 <div class = 'container' id = 'blur'>
 <div class = 'img-slider'></div>
-<form class = 'login-block' action = 'login.php' method = 'POST' autocomplete = 'off'>
+<form class = 'login-block' action = 'login.php' method = 'POST' autocomplete = 'on'>
 <div class = 'contents'>
 <div class = 'upper'>
 Login
@@ -49,7 +49,7 @@ Login
 <form action = 'signup.php' method = 'POST' class = 'form-container'>
 <div class = 'container-1'>
 <div class = 'upper'>
-Sign In
+Sign Up
 <input type = 'text' placeholder = 'Enter Email' name = 'email' required>
 <input type = 'password' placeholder = 'Enter Password' name = 'password' required>
 <input type = 'password' placeholder = 'Re-enter Password' name = 'rpassword' required>
