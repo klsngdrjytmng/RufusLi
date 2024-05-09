@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* style.css file*/
+body {
+	justify-content: center;
+	height: 100vh;
+    margin:0;
+    padding: 0;
+}
+/*
+----------Top-Header----------*/
+.header-content{
+    display:flex;
+    align-content: center;
+    height: 15%;
+    width: 100%;
+}
+.logo-img a img{
+    height:75%;
+    padding: 10px;
+    vertical-align: middle;
+}
+
+nav {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    color: #244b77;
+    display: flex;
+    font-size:1.5rem ;
+}
+.navbar-brand{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-font{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+/*---------------MAIN BODY--------------*/
+.container-fluid{
+    height: 70%;
+    width: 100%;
+}
+.row{
+    display: flex;
+    height: 100%;
+    padding: 10px;
+    /*background-color: antiquewhite;*/
+}
+.left-col{
+    height: 90%;
+    width: 20%; /*25*/ 
+    background-color: #244b77;
+}
+.mid-col{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width:80%;
+    background-color: white;
+}
+
+.Home{
+    display: flex;
+    height: 95%;
+    width: 95%;
+    border: solid rgb(225, 219, 219);
+}
+.attendance-details{
+    height: 100%;
+    width: 100%;
+}
+.at-de-heading{
+    height: 15%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+.at-de-dropdown{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    min-width: 250px;
+    height: 30px;
+}
+.select-box{
+    appearance: none;
+    padding: 0 30px 0 15px;
+    width: 80%;
+    color: black;
+    font-size: 15px;
+}
+table{
+    width: 80%;
+    margin-left: auto;
+    margin-right:auto;
+    align-items: center;
+}
+tr{
+    display: table-row;
+    vertical-align: inherit;
+    unicode-bidi: isolate;
+    border-color: inherit;
+}
+th{
+    padding: 10px;
+    /*border-top: 2px solid #dee2e6;*/
+}
+.Take-Attendance{
+    display: none;
+}
+.navigate{
+    padding: 16px 16px 0;
+}
+.nav-item{
+    padding-bottom: 16px;   
+}
+.btn-primary {
+    display: flex;
+    justify-content: center;
+    background-color:#ffffff;
+    color: black;
+    height: 10%;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 2vh;
+}
+.btn-primary:hover{
+    background-color: #244b77;
+    color: #ffffff;
+}
+@media screen and (max-width: 600px)
+{
+    
+}
+
+/*---------------QRCODE SCANNER---------------*/
+.qrcontainer {
+	width: 90%;
+	max-width: 500px
+}
+
+.qrcontainer h1 {
+	color: #ffffff;
+}
+
+.section {
+	background-color: #ffffff;
+	padding: 50px 30px;
+	border: 1.5px solid #b2b2b2;
+	border-radius: 0.25em;
+	box-shadow: 0 20px 25px rgba(0, 0, 0, 0.25);
+}
+
+#my-qr-reader {
+	padding: 20px !important;
+	border: 1.5px solid #b2b2b2 !important;
+	border-radius: 8px;
+}
+
+#my-qr-reader img[alt="Info icon"] {
+	display: none;
+}
+
+#my-qr-reader img[alt="Camera based scan"] {
+	width: 100px !important;
+	height: 100px !important;
+}
+
+button {
+	padding: 10px 20px;
+	border: 1px solid #b2b2b2;
+	outline: none;
+	border-radius: 0.25em;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	background-color: #244b77;
+	transition: 0.3s background-color;
+}
+
+button:hover {
+	background-color:white;
+    color:black;
+}
+
+#html5-qrcode-anchor-scan-type-change {
+	text-decoration: none !important;
+}
+
+video {
+	width: 100% !important;
+	border: 1px solid #b2b2b2 !important;
+	border-radius: 0.25em;
+}
