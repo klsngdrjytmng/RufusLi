@@ -103,6 +103,7 @@ nav {
     color: white;
     background-color: #244b77;
     cursor: pointer;
+    margin: 5px;
 }
 /* ----------------POP UP FORM----------------------*/
 .container#blur.active{
@@ -114,7 +115,8 @@ nav {
     position: fixed;
     left: 50%;
     transform: translate(-50%,-50%);
-    width:50%;
+    height: 50%;
+    width:35%;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0, 0, 0,.5);
     background: rgb(192, 219, 243);
@@ -128,8 +130,10 @@ nav {
     opacity: 1;
     transition: 0.5s;
 }
-.container-1{
-    
+.buttons2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 /*Full-width input fields*/
 .form-container input[type=text], .form-container input[type=password]{
@@ -154,9 +158,4 @@ nav {
     width: 1200x;
     position: relative;
     float: left;
-}
-
-/* ------------ FOOTER -----------*/
-footer{
-
 }
