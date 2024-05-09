@@ -12,12 +12,13 @@ include( 'connection.php' );
 <div class = 'header-content'>
 <div class = 'logo-img'>
 <a href = 'https://salesiancollege.ac.in/'>
-<img src = 'https://salesiancollege.ac.in/wp-content/uploads/2023/06/Blue-Logo.svg' alt = 'Salesian College (Autonomous) Siliguri & Sonada' class = 'logo' />
+<img src = 'https://salesiancollege.ac.in/wp-content/uploads/2023/06/Blue-Logo.svg' alt = 'Salesian College (Autonomous) Siliguri & Sonada' class = 'logo'/>
 </a>
 </div>
 <nav>
 QR Code Attendance System Login
 </nav>
+
 </div>
 <div class = 'container' id = 'blur'>
 <div class = 'img-slider'></div>
@@ -34,13 +35,13 @@ Login
 <input type = 'password' name = 'password' id = 'password' placeholder = 'Password' required>
 </div>
 <div class = 'remember-forgot'>
-<label><input type = 'checkbox'>Remember me</label>
-<a href = '#'>forgot password?</a>
+<label><input type = 'checkbox'>Remember me
+<a href = 'forgotpass.php'>forgot password?</a>
 </div>
 </div>
 <div class = 'buttons'>
 <button type = 'submit' name = 'submit' class = 'btn'>Log-in</button>
-<button type = 'submit' class = 'btn sign' onclick = 'toggle()'>Sign-In</button>
+<button type = 'submit' class = 'btn sign' onclick = 'toggle()'>Sign-Up</button>
 </div>
 </div>
 </form>
@@ -51,16 +52,18 @@ Login
 <div class = 'upper'>
 Sign Up
 <input type = 'text' placeholder = 'Enter Email' name = 'email' required>
-<input type = 'password' placeholder = 'Enter Password' name = 'password' required>
-<input type = 'password' placeholder = 'Re-enter Password' name = 'rpassword' required>
+<input type = 'password' placeholder = 'Enter Password' name = 'psw' required>
+<input type = 'password' placeholder = 'Renter Password' name = 'rpsw' required>
 </div>
-<div class = 'buttons'>
+<div class = 'buttons2'>
 <button type = 'submit' name = 'signup' class = 'btn'>Submit</button>
 <button type = 'button' class = 'btn cancel' onclick = 'toggle()'>Close</button>
 </div>
 </div>
 </form>
 </div>
+<footer>
+</footer>
 </body>
 <script>
 
