@@ -25,7 +25,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['submit'])) {
         // Check if email is in a valid format
         if (filter_var($email, FILTER_VALIDATE_EMAIL) && strpos($email, "@gmail.com") !== false) {
             // Prepare and execute the SQL statement to fetch user from the database
-            $stmt = $conn->prepare('SELECT * FROM logininfo WHERE email = ?');
+            $stmt = $conn->prepare('SELECT * FROM admininfo WHERE email = ?');
             $stmt->bind_param('s', $email);
             $stmt->execute();
             $result = $stmt->get_result();

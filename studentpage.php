@@ -1,52 +1,60 @@
-<!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="front-page.css">
     <title>Document</title>
 </head>
-
 <body>
+    
     <div class="header-content">
         <div class="logo-img">
             <a href="https://salesiancollege.ac.in/">
-                <img src="https://salesiancollege.ac.in/Admission201819/Logo/logo.png" alt="Salesian College (Autonomous) Siliguri & Sonada" class="logo" />
+                <img src="https://salesiancollege.ac.in/Admission201819/Logo/logo.png" alt="Salesian College (Autonomous) Siliguri & Sonada" class="logo"/>
             </a>
-
         </div>
         <nav>
             <div class="navbar-brand">
-                Salesian College
-                <br>
-                Welcome, ABC (1234)
+                    Salesian College
+                    <br>
+                    Welcome, ABC (1234)
             </div>
             <div class="top-font">
                 QR Code Attendance System Login
             </div>
         </nav>
-    </div>
+    </div>  
     <div class="container-fluid">
         <div class="row">
             <div class="left-col">
                 <div class="navigate">
                     <div class="nav-item">
-                        <button onclick="redirectToIndex()" class="btn-primary">
+                        <a onclick="ShowHomePage()" class="home-nav btn-primary">
                             Home
-                        </button>
+                        </a>
                     </div>
                     <div class="nav-item">
-                        <button onclick="redirectToQRPage()" class="btn-primary">
+                        <a onclick="TakeAttendance()" class="btn-primary">
                             Take Attendance
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="profile-details">
-                    profile
+                    <div class="profile-box">
+                        <div class="user-img">
+                            <img src="" alt="profile-pic">
+                        </div>
+                    </div>
+                    <div class="profile-details">
+                        <div class="p-d-u">
+                            Name: <span class="name"></span>
+                            Id. No.: <span class="std_id"></span>
+                            Department: <span class="department"></span>
+                            Semester: <span class="semester"></span>
+                        </div>    
+                    </div>
                 </div>
             </div>
-
             <div class="mid-col">
                 <div class="Home" id="Home">
                     <div class="attendance-details">
@@ -74,40 +82,31 @@
                                     <th>Subject Name</th>
                                     <th>Subject Code</th>
                                     <th>Total Classes</th>
-                                    <th>Attendendence</th>
+                                    <th>Attendend</th>
                                     <th>Percentage</th>
                                 </tr>
                             </thead>
                         </table>
                     </div>
                 </div>
-                <div class="Take-Attendance" id="Take-Attendance">
+                <div class="Take-Attendance" id="Take-Attendance">   
                     <div class="qrcontainer">
-                        <h1>Scan QR Codes</h1>
-                        <div class="section">
-                            <div id="my-qr-reader">
+                        <div class="container">
+                            <div class="section">
+                                <div id="my-qr-reader">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <script src="https://unpkg.com/html5-qrcode">
-                    </script>
+                        <script
+                            src="https://unpkg.com/html5-qrcode">
+                        </script>
+                    </body>
                 </div>
             </div>
-
             <div class="right-col">
             </div>
         </div>
     </div>
-    <script src="frontjs.js"></script>
-    <script>
-        function redirectToIndex() {
-            window.location.href = 'index.php';
-        }
-
-        function redirectToQRPage() {
-            window.location.href = 'qr.php';
-        }
-    </script>
+    <script src="front-page.js"></script>
 </body>
-
 </html>

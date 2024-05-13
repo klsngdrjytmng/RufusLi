@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['signup'])) {
                 $hashed_password = password_hash($password, PASSWORD_DEFAULT);
 
                 // Prepare and execute the SQL statement to check if the email exists in the database
-                $stmt = $conn->prepare('SELECT * FROM logininfo WHERE email = ?');
+                $stmt = $conn->prepare('SELECT * FROM admininfo WHERE email = ?');
                 $stmt->bind_param('s', $email);
                 $stmt->execute();
                 $result = $stmt->get_result();
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' && isset($_POST['signup'])) {
                 } else {
                     // Email is not registered, proceed with sign-up
                     // Prepare and execute the SQL statement to insert user into the database
-                    $stmt = $conn->prepare('INSERT INTO logininfo (email, password) VALUES (?, ?)');
+                    $stmt = $conn->prepare('INSERT INTO admininfo (email, password) VALUES (?, ?)');
                     $stmt->bind_param('ss', $email, $hashed_password);
 
                     if ($stmt->execute()) {

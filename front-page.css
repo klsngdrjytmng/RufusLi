@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 /* style.css file*/
 body {
@@ -17,12 +18,16 @@ body {
     height: 15%;
     width: 100%;
 }
+.logo-img{
+    height:100%;
+    width: 15%;
+    padding-left:3%;
+}
 .logo-img a img{
     height:75%;
     padding: 10px;
     vertical-align: middle;
 }
-
 nav {
     height: 100%;
     width: 100%;
@@ -59,7 +64,9 @@ nav {
 .left-col{
     height: 90%;
     width: 20%; /*25*/ 
-    background-color: #244b77;
+    background-color: #e6e9ed;
+    display: flex;
+    flex-direction: column;
 }
 .mid-col{
     float: right;
@@ -128,7 +135,15 @@ th{
 .nav-item{
     padding-bottom: 16px;   
 }
-.btn-primary {
+
+.nav-item a{
+    align-items: center;
+    height: 5vh;
+    border-radius: .3rem;
+    color: #244b77;
+    background-color: white;
+}
+.btn-primary{
     display: flex;
     justify-content: center;
     background-color:#ffffff;
@@ -139,22 +154,57 @@ th{
     white-space: nowrap;
     font-size: 2vh;
 }
-.btn-primary:hover{
+.btn-primary.active{
     background-color: #244b77;
     color: #ffffff;
 }
+.profile-box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.user-img{
+    background-color: #244b77;
+    height: 25vh;
+    width:16vw;
+}
+.profile-details .p-d-u{
+    padding:1vw ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: small;
+}
 @media screen and (max-width: 600px)
 {
-    
 }
 
-/*---------------QRCODE SCANNER---------------*/
-.qrcontainer {
-	width: 90%;
-	max-width: 500px
+
+button {
+	padding: 10px 20px;
+	border: 1px solid #b2b2b2;
+	outline: none;
+	border-radius: 0.25em;
+	color: white;
+	font-size: 15px;
+	cursor: pointer;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	background-color: #244b77;
+	transition: 0.3s background-color;
+}
+button:hover {
+    color:black;
 }
 
-.qrcontainer h1 {
+.container {
+	width: 100%;
+	max-width: 500px;
+	margin: 5px;
+}
+
+.container h1 {
 	color: #ffffff;
 }
 
@@ -179,33 +229,4 @@ th{
 #my-qr-reader img[alt="Camera based scan"] {
 	width: 100px !important;
 	height: 100px !important;
-}
-
-button {
-	padding: 10px 20px;
-	border: 1px solid #b2b2b2;
-	outline: none;
-	border-radius: 0.25em;
-	color: white;
-	font-size: 15px;
-	cursor: pointer;
-	margin-top: 15px;
-	margin-bottom: 10px;
-	background-color: #244b77;
-	transition: 0.3s background-color;
-}
-
-button:hover {
-	background-color:white;
-    color:black;
-}
-
-#html5-qrcode-anchor-scan-type-change {
-	text-decoration: none !important;
-}
-
-video {
-	width: 100% !important;
-	border: 1px solid #b2b2b2 !important;
-	border-radius: 0.25em;
 }
