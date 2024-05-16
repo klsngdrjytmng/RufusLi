@@ -38,7 +38,7 @@
                         </button>
                     </div>
                     <div class="nav-item" >
-                        <a href="qr.html" class="btn-primary">
+                        <a href="qr.php" class="btn-primary">
                             <span class="material-symbols-outlined">
                                 qr_code_scanner
                             </span>
